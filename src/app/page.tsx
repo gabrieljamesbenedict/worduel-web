@@ -8,7 +8,7 @@ import HomePageButtons from './components/HomePageButtons'
 const RootPage = () => {
 
   return (
-    <div className='m-16'>
+    <div className='h-screen w-screen flex items-center justify-center'>
       <div className='flex flex-col items-center gap-12 text-align'>
 
         <div className="flex flex-col items-center gap-2 text-align">
