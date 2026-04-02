@@ -15,25 +15,29 @@ const HomePageButtons = () => {
     }
 
     function login() {
-        //alert("Login");
         router.push('/login')
     }
 
     function register() {
-        //alert("Register");
         router.push('/register')
     }
 
+    function renderButtons() {
+    if (loggedIn) {
+        return <PrimaryButton onClick={startButtonPressed}>Play</PrimaryButton>;
+    }
+
+    return (
+        <>
+            <PrimaryButton onClick={login}>Login</PrimaryButton>
+            <SecondaryButton onClick={register}>Register</SecondaryButton>
+        </>
+    );
+}
+
     return (
         <div className='flex flex-row items-center gap-4'>
-            {loggedIn ? (
-                <PrimaryButton onClick={startButtonPressed}>Play</PrimaryButton>
-            ) : (
-                <>
-                    <PrimaryButton onClick={login}>Login</PrimaryButton>
-                    <SecondaryButton onClick={register}>Register</SecondaryButton>
-                </>
-            )}
+            {renderButtons()}
         </div>
     )
 }
