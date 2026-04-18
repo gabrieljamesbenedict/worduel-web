@@ -2,12 +2,18 @@
 
 import PrimaryButton from "../components/PrimaryButton"
 import WorduelLogoAndTitle from "../components/WorduelLogoAndTitle"
-
+import { useRouter } from 'next/navigation'
 
 const PlayPage = () => {
 
+  const router = useRouter()
+
   function OnPressedPlay () {
-    
+    router.push('/game')
+  }
+
+  function onPressedLogin () {
+    router.push('/login')
   }
 
   return (
@@ -18,9 +24,14 @@ const PlayPage = () => {
           <p className="text-2xl">
             Play against your friends in this multiplayer word-guessing game.
           </p>
-          <PrimaryButton onClick={OnPressedPlay}>
-            Play
-          </PrimaryButton>
+          <div className="flex flex-col gap-2">
+            <PrimaryButton onClick={OnPressedPlay}>
+              Play
+            </PrimaryButton>
+            <button onClick={onPressedLogin} className="cursor-pointer text-gray-500 hover:text-black transition-colors">
+              Login to your Account
+            </button>
+          </div>
         </div>
       </div>
     </>
