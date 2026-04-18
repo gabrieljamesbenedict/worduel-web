@@ -9,7 +9,7 @@ const PrimaryButton = ({ onClick, children }: PrimaryButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className="min-w-48 min-h-12 border border-black rounded-full cursor-pointer text-xl hover:bg-black hover:text-white transition-all"
+      className="min-w-48 w-fit min-h-12 border border-black rounded-full cursor-pointer text-xl hover:bg-black hover:text-white transition-all"
     >
       {children}
     </button>
