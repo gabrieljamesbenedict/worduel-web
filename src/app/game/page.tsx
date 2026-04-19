@@ -1,6 +1,10 @@
+import GameCellGrid from "../components/GameComponents/GameCellGrid"
+
 const GamePage = () => {
   return (
-    <div>GamePage</div>
+    <div>
+      <GameCellGrid />
+    </div>
   )
 }
 
