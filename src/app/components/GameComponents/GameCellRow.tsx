@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import GameCell from "./GameCell"
 
 type GameCellRowProps = {
@@ -5,6 +8,7 @@ type GameCellRowProps = {
 }
 
 const GameCellRow = ({ word }:GameCellRowProps) => {
+
   return (
     <div className="flex gap-1">
         <GameCell letter={word[0]}/>
