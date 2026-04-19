@@ -1,21 +1,7 @@
-import LoginForm from "../components/LoginForm"
-import SubtitleHeader from "../components/SubtitleHeader"
-import TitleLogo from "../components/TitleLogo"
-
-const LoginPage = () => {
+const RegisterPage = () => {
   return (
-    <div className='h-screen w-screen flex items-center justify-center'>
-        <div className="flex flex-col gap-4 text-center">
-
-            <TitleLogo/>
-
-            <SubtitleHeader>Create A New Account</SubtitleHeader>
-
-            {/* <LoginForm/> */}
-
-        </div>
-    </div>
+    <div>RegisterPage</div>
   )
 }
 
-export default LoginPage
+export default RegisterPage

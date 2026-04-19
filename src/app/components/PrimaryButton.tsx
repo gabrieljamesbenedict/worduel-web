@@ -1,9 +1,16 @@
-const PrimaryButton = ({ children, onClick }: any) => {
+import React from 'react'
+
+type PrimaryButtonProps = {
+  onClick: () => void;
+  children: React.ReactNode;
+};
+
+const PrimaryButton = ({ onClick, children }: PrimaryButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className="bg-black text-white text-2xl px-4 py-2 min-w-50 rounded-full cursor-pointer"
-      >
+      className="min-w-48 w-fit min-h-12 border border-black rounded-full cursor-pointer text-xl hover:bg-black hover:text-white transition-all"
+    >
       {children}
     </button>
   )

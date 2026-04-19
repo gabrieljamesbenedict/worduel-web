@@ -12,7 +12,9 @@ const RootLayout = ({children}: Readonly<{children: React.ReactNode;}>) => {
       lang="en"
       className={`${roboto.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }

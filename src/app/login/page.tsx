@@ -1,20 +1,8 @@
-import LoginForm from "../components/LoginForm"
-import SubtitleHeader from "../components/SubtitleHeader"
-import TitleLogo from "../components/TitleLogo"
+import React from 'react'
 
 const LoginPage = () => {
   return (
-    <div className='h-screen w-screen flex items-center justify-center'>
-        <div className="flex flex-col gap-4 text-center">
-
-            <TitleLogo/>
-
-            <SubtitleHeader>Login to Your Account</SubtitleHeader>
-
-            <LoginForm/>
-
-        </div>
-    </div>
+    <div>LoginPage</div>
   )
 }
 
